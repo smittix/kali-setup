@@ -1,2 +1,3 @@
 # kali-setup
-Some personal scripts that I find useful on new kali builds.
+
+Just a simple script to make new Kali v2 builds usable quickly.

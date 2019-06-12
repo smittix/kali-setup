@@ -54,25 +54,25 @@ This script has a number of options -
 
 [4] Install Git Repos
 
-	*This option git clones various useful Git repositorys listed below.
+*This option git clones various useful Git repositorys listed below.
 
 [5] Install Oh My ZSH
 
-	*Install Oh My Zsh and sets up the Jonathan theme.
+*Install Oh My Zsh and sets up the Jonathan theme.
 
 [6] Install Vbox Additions
 
-	*Exactly what it says on the tin, for use with Virtual Box.
+*Exactly what it says on the tin, for use with Virtual Box.
 
 [7] Install Wifite Dependencies
 
-	*This option installs libcurl4-openssl-dev, libssl-dev, zlib1g-dev, hcxtols and hcxdumptools. All to ensure Wifite operates properly.
+*This option installs libcurl4-openssl-dev, libssl-dev, zlib1g-dev, hcxtols and hcxdumptools. All to ensure Wifite operates properly.
 
 [8] Update Git Tools
 
-	*Performs a git pull on your tools directory and updates all git repository's at once.
+*Performs a git pull on your tools directory and updates all git repository's at once.
 
 [9] Exit
 
-	*You know what this does.
+*You know what this does.
 

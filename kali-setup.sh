@@ -18,7 +18,7 @@ fi
 PS3='Please enter your choice: '
 
 #input options
-options=("1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" "5-Install-Oh-My-ZSH" "6-Install-Vbox-Additions" "7-Install-Wifite-Dependencies" "8-Update-Git-Tools" "9-Exit")
+options=("[1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" "5-Install-Oh-My-ZSH" "6-Install-Vbox-Additions" "7-Install-Wifite-Dependencies" "8-Update-Git-Tools" "9-Exit")
 
 #function to display options nice
 function optionsClean() {
@@ -44,6 +44,9 @@ do
 		apt-get -y autoclean
 		updatedb
 		printf "\033[1;41m Nice and Clean.\x1b[0m\n\n"
+		printf "\033[1;41m Initialising Metasploit Database..\xb[0m\n\n"
+		msfdb init
+		update-rc.d postgresql enable
 		optionsClean
 		;;
 		"2-Dist-Upgrade")
@@ -67,10 +70,8 @@ do
 		printf "\033[1;41m Cloning Git Repo's...\x1b[0m\n\n"
 		cd $gitdir
 		git clone https://github.com/0xInfection/TIDoS-Framework
-		git clone https://github.com/SpiderLabs/sheepl
 		git clone https://github.com/RhinoSecurityLabs/pacu
 		git clone https://github.com/m0rtem/CloudFail
-		git clone https://github.com/lorentzenman/parsenal
 		git clone https://github.com/trustedsec/ridenum
 		git clone https://github.com/pentestmonkey/windows-privesc-check
 		git clone https://github.com/trustedsec/unicorn

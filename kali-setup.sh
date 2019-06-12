@@ -78,7 +78,6 @@ do
 		git clone https://github.com/ICSec/airpwn-ng
 		git clone https://github.com/adaptivethreat/Empire
 		git clone https://github.com/DanMcInerney/wifijammer
-		git clone https://github.com/lorentzenman/payday
 		git clone https://github.com/CoreSecurity/impacket
 		git clone https://github.com/leebaird/discover
 		git clone https://github.com/scrapy/scrapy
@@ -94,7 +93,6 @@ do
 		git clone https://github.com/OJ/gobuster
 		git clone https://github.com/thelinuxchoice/blackeye
 		git clone https://github.com/securestate/king-phisher
-		git clone https://github.com/danielmiessler/SecLists
 		git clone https://github.com/shenril/Sitadel
 		git clone https://github.com/khast3x/h8mail
 		git clone https://github.com/aquasecurity/kube-hunter
@@ -102,6 +100,7 @@ do
 		git clone https://github.com/ThoughtfulDev/EagleEye
 		git clone https://github.com/cr4shcod3/pureblood
 		git clone https://github.com/vaguileradiaz/tinfoleak
+		wget https://sec.stanev.org/download/wlc/wlc_0.2.zip
 		printf "\033[1;41m Done!\x1b[0m\n\n"
 		optionsClean
 		;;

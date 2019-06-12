@@ -55,6 +55,39 @@ This script has a number of options -
 [4] Install Git Repos
 
 * This option git clones various useful Git repositorys listed below.
+	* https://github.com/0xInfection/TIDoS-Framework
+	* https://github.com/RhinoSecurityLabs/pacu
+	* https://github.com/m0rtem/CloudFail
+	* https://github.com/trustedsec/ridenum
+	* https://github.com/pentestmonkey/windows-privesc-check
+	* https://github.com/trustedsec/unicorn
+	* https://github.com/ICSec/airpwn-ng
+	* https://github.com/adaptivethreat/Empire
+	* https://github.com/DanMcInerney/wifijammer
+	* https://github.com/CoreSecurity/impacket
+	* https://github.com/leebaird/discover
+	* https://github.com/scrapy/scrapy
+	* https://github.com/MobSF/Mobile-Security-Framework-MobSF
+	* https://github.com/drwetter/testssl.sh/
+	* https://github.com/BishopFox/spoofcheck
+	* https://github.com/DanMcInerney/icebreaker
+	* https://github.com/hak5darren/wp6
+	* https://github.com/superkojiman/onetwopunch
+	* https://github.com/nccgroup/chuckle
+	* https://github.com/m3m1t1m/appalyzer
+	* https://github.com/adipinto/yet-another-nessus-parser
+	* https://github.com/OJ/gobuster
+	* https://github.com/thelinuxchoice/blackeye
+	* https://github.com/securestate/king-phisher
+	* https://github.com/shenril/Sitadel
+	* https://github.com/khast3x/h8mail
+	* https://github.com/aquasecurity/kube-hunter
+	* https://github.com/BlackArch/wordlistctl
+	* https://github.com/ThoughtfulDev/EagleEye
+	* https://github.com/cr4shcod3/pureblood
+	* https://github.com/vaguileradiaz/tinfoleak
+	* wget https://sec.stanev.org/download/wlc/wlc_0.2.zip
+	
 
 [5] Install Oh My ZSH
 

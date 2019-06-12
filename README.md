@@ -86,7 +86,7 @@ This script has a number of options -
 	* https://github.com/ThoughtfulDev/EagleEye
 	* https://github.com/cr4shcod3/pureblood
 	* https://github.com/vaguileradiaz/tinfoleak
-	* wget https://sec.stanev.org/download/wlc/wlc_0.2.zip
+	* https://sec.stanev.org/download/wlc/wlc_0.2.zip
 	
 
 [5] Install Oh My ZSH

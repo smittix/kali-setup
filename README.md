@@ -93,6 +93,8 @@ This script has a number of options -
 
 * Install Oh My Zsh and sets up the Jonathan theme.
 
+![alt text](https://zshthem.es/img/screenshots/jonathan.png)
+
 [6] Install Vbox Additions
 
 * Exactly what it says on the tin, for use with Virtual Box.

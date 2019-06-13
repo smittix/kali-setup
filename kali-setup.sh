@@ -59,7 +59,7 @@ do
 		;;
 		"3-Install-Packages")
 		printf "\033[1;41m Starting apt-get update...\x1b[0m\n\n"
-		apt install libreoffice brutespray crackmapexec bloodhound ftp secure-delete flameshot bleachbit veil veil-evasion nfs-common onesixtyone finger rsh-client jxplorer sipcalc nbtscan recordmydesktop eyewitness filezilla tmux zsh testssl.sh freerdp2-x11 remmina neo4j bettercap seclists mitmf shellter backdoor-factory responder firmware-mod-kit
+		apt install libreoffice brutespray crackmapexec bloodhound ftp secure-delete flameshot bleachbit veil veil-evasion nfs-common onesixtyone finger rsh-client jxplorer sipcalc nbtscan recordmydesktop eyewitness filezilla tmux zsh testssl.sh freerdp2-x11 remmina neo4j bettercap seclists mitmf shellter backdoor-factory responder firmware-mod-kit gobuster
 		printf "\033[1;41m Starting apt-get install -y linux-headers-$(uname -r)...\x1b[0m\n\n"
 		apt-get install -y linux-headers-$(uname -r)
 		printf "\033[1;41m Done!\x1b[0m\n\n"
@@ -90,7 +90,6 @@ do
 		git clone https://github.com/nccgroup/chuckle
 		git clone https://github.com/m3m1t1m/appalyzer
 		git clone https://github.com/adipinto/yet-another-nessus-parser
-		git clone https://github.com/OJ/gobuster
 		git clone https://github.com/thelinuxchoice/blackeye
 		git clone https://github.com/securestate/king-phisher
 		git clone https://github.com/shenril/Sitadel

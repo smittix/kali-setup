@@ -51,6 +51,7 @@ This script has a number of options -
 	* backdoor-factory
 	* responder
 	* firmware-mod-kit
+	* GoBuster
 
 [4] Install Git Repos
 
@@ -76,7 +77,6 @@ This script has a number of options -
 	* https://github.com/nccgroup/chuckle
 	* https://github.com/m3m1t1m/appalyzer
 	* https://github.com/adipinto/yet-another-nessus-parser
-	* https://github.com/OJ/gobuster
 	* https://github.com/thelinuxchoice/blackeye
 	* https://github.com/securestate/king-phisher
 	* https://github.com/shenril/Sitadel

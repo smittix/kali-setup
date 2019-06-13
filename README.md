@@ -109,5 +109,5 @@ This script has a number of options -
 
 [9] Exit
 
-* You know what this does.
+* You know what this does..
 

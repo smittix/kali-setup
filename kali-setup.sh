@@ -46,6 +46,7 @@ do
 		printf "\033[1;41m Nice and Clean.\x1b[0m\n\n"
 		printf "\033[1;41m Initialising Metasploit Database..\xb[0m\n\n"
 		msfdb init
+                printf "\033[1;41m Enabling postresql for autostart..\xb[0m\n\n"
 		update-rc.d postgresql enable
 		optionsClean
 		;;

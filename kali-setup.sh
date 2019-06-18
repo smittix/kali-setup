@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 #Vars
 gitdir=/root/Tools
 dir1=/root/Tools/hcxtools
@@ -44,9 +44,10 @@ do
 		apt-get -y autoclean
 		updatedb
 		printf "\033[1;41m Nice and Clean.\x1b[0m\n\n"
-		printf "\033[1;41m Initialising Metasploit Database..\xb[0m\n\n"
+		clear
+		printf "\033[1;41m Initialising Metasploit Database..\x1b[0m\n\n"
 		msfdb init
-                printf "\033[1;41m Enabling postresql for autostart..\xb[0m\n\n"
+                printf "\033[1;41m Enabling postresql for autostart..\x1b[0m\n\n"
 		update-rc.d postgresql enable
 		optionsClean
 		;;

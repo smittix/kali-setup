@@ -18,7 +18,7 @@ fi
 PS3='Please enter your choice: '
 
 #input options
-options=("[1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" "5-Install-Oh-My-ZSH" "6-Install-Vbox-Additions" "7-Install-Wifite-Dependencies" "8-Update-Git-Tools" "9-Exit")
+options=("1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" "5-Install-Oh-My-ZSH" "6-Install-Vbox-Additions" "7-Install-Wifite-Dependencies" "8-Update-Git-Tools" "9-Exit")
 
 #function to display options nice
 function optionsClean() {

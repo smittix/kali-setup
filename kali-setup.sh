@@ -107,12 +107,16 @@ do
 		;;
 		"5-Install-Oh-My-ZSH")
 		printf "\033[1;41m Installing Oh My ZSH!...\x1b[0m\n\n"
-		sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+		wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -P /tmp
+		sed -i 's/RUNZSH=${RUNZSH:-yes}/RUNZSH=${RUNZSH:-no}/g' /tmp/install.sh
+		chmod +x /tmp/install.sh
+		/bin/bash /tmp/install.sh
 		printf "\033[1;41m Done!!...\x1b[0m\n\n"
-		printf "\033[1;41m Changing the ZSH theme..\xb1[0m\n\n"
-		sed -i -e 's/robbyrussel/jonathan/g' /root/.zshrc
-		printf "\033[1;41m Done...\xb1[0m\n\n"
-		break
+		printf "\033[1;41m Changing the ZSH theme..\x1b[0m\n\n"
+		sed -i 's/robbyrussell/jonathan/g' /root/.zshrc
+		printf "\033[1;41m Completed.. you will need to restart your terminal to launch ZSH\x1b[0m\n\n"
+		rm /tmp/install.sh
+		optionsClean
 		;;
 		"6-Install-Vbox-Additions")
 		printf "\033[1;41m Installing VirtualBOx Guest Additions...\x1b[0m\n\n"

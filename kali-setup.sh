@@ -101,6 +101,7 @@ do
 		git clone https://github.com/ThoughtfulDev/EagleEye
 		git clone https://github.com/cr4shcod3/pureblood
 		git clone https://github.com/vaguileradiaz/tinfoleak
+		git clone https://github.com/davidtavarez/pwndb
 		wget https://sec.stanev.org/download/wlc/wlc_0.2.zip
 		printf "\033[1;41m Done!\x1b[0m\n\n"
 		optionsClean

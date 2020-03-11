@@ -61,7 +61,7 @@ do
 		;;
 		"3-Install-Packages")
 		printf "\033[1;41m Starting apt-get update...\x1b[0m\n\n"
-		apt install libreoffice brutespray crackmapexec bloodhound ftp secure-delete flameshot bleachbit veil veil-evasion nfs-common onesixtyone finger rsh-client jxplorer sipcalc nbtscan recordmydesktop eyewitness filezilla tmux zsh testssl.sh freerdp2-x11 remmina neo4j bettercap seclists shellter backdoor-factory responder firmware-mod-kit gobuster
+		apt install tor libreoffice brutespray crackmapexec bloodhound ftp secure-delete flameshot bleachbit veil veil-evasion nfs-common onesixtyone finger rsh-client jxplorer sipcalc nbtscan recordmydesktop eyewitness filezilla tmux zsh testssl.sh freerdp2-x11 remmina neo4j bettercap seclists shellter backdoor-factory responder firmware-mod-kit gobuster
 		printf "\033[1;41m Starting apt-get install -y linux-headers-$(uname -r)...\x1b[0m\n\n"
 		apt-get install -y linux-headers-$(uname -r)
 		printf "\033[1;41m Done!\x1b[0m\n\n"

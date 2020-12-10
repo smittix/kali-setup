@@ -22,7 +22,7 @@ mkdir -p $wordlistsdir
 mkdir -p $containersdir
 mkdir -p $osintdir
 mkdir -p $enumdir
-mkdir -p $cheatsheets
+mkdir -p $cheatsheetsdir
 
 #Handling
 die() { echo "$@" 1>&2; exit 1; }
@@ -36,7 +36,7 @@ fi
 PS3='Please enter your choice: '
 
 #input options
-options=("1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" 5-Install-Melcara-Nessus-Parser" "6-Install-Wifite-Dependencies" "7-Update-Git-Tools" "8-Exit")
+options=("1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" "5-Install-Melcara-Nessus-Parser" "6-Install-Wifite-Dependencies" "7-Update-Git-Tools" "8-Exit")
 
 #function to display options nice
 function optionsClean() {

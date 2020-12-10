@@ -5,12 +5,13 @@ gitdir=/opt/tools
 mobiledir=/opt/tools/mobile
 clouddir=/opt/tools/cloud
 wirelessdir=/opt/tools/wireless
-reportingdir=/opt/tools/reportingdir
+reportingdir=/opt/tools/reporting
 wordlistsdir=/opt/tools/wordlists
 containersdir=/opt/tools/containers
 osintdir=/opt/tools/osint
 enumdir=/opt/tools/enumeration
 cheatsheetsdir=/opt/tools/cheetsheets
+privescdir=/opt/tools/privesc
 dir1=/opt/tools/wireless/hcxtools
 dir2=/opt/tools/wireless/hcxdumptool
 mkdir -p $gitdir
@@ -23,6 +24,7 @@ mkdir -p $containersdir
 mkdir -p $osintdir
 mkdir -p $enumdir
 mkdir -p $cheatsheetsdir
+mkdir -p $privescdir
 
 #Handling
 die() { echo "$@" 1>&2; exit 1; }
@@ -45,7 +47,7 @@ function optionsClean() {
 	done
 }
 #Menu Headers
-printf "\033[1;41m  Kali Post Install Script - Version 0.1\033[1;m\n\033[1;46m  By James Smith | https://www.stealingthe.network | @iamstx  \033[1;m\n"
+printf "\033[1;41m  Kali Post Install Script - Version 2.0\033[1;m\n\033[1;46m  By James Smith | https://www.stealingthe.network | @osiris2600  \033[1;m\n"
 printf "\033[1;46m  If you've just installed Kali Version 2, It's recommended to go with Option 1 first.  \033[1;m\n"
 
 #define what to do for each option
@@ -86,11 +88,11 @@ do
 		optionsClean
 		;;
 		"4-Install-Git-Repos")
-		printf "\033[1;41m Checking for Tools Directory...(Repo's will be cloned to /root/Tools) \x1b[0m\n\n"
+		printf "\033[1;41m Checking for Tools Directory...(Repo's will be cloned to /opt/tools) \x1b[0m\n\n"
 		printf "\033[1;41m Cloning Git Repo's...\x1b[0m\n\n"
 		cd $gitdir
 		git clone https://github.com/m0rtem/CloudFail $clouddir
-		git clone https://github.com/pentestmonkey/windows-privesc-check
+		git clone https://github.com/pentestmonkey/windows-privesc-check $privescdir
 		git clone https://github.com/ICSec/airpwn-ng $wirelessdir
 		git clone https://github.com/DanMcInerney/wifijammer $wirelessdir
 		git clone https://github.com/leebaird/discover $osintdir
@@ -111,7 +113,7 @@ do
 		"5-Install-Melcara-Nessus-Parser")
 		printf "\033[1;41m Installing Melcara Nessus Parser...\x1b[0m\n\n"
 		export PERL_MM_USE_DEFAULT=1
-		mkdir /opt/melcara && cd /opt/melcara
+		mkdir -p /opt/tools/reporting/melcara && cd /opt/tools/reporting/melcara
 		wget http://www.melcara.com/wp-content/uploads/2017/09/parse_nessus_xml.v24.pl_.zip
 		unzip parse_nessus_xml.v24.pl_.zip
 		chmod +x parse_nessus_xml.v24.pl
@@ -125,8 +127,8 @@ do
 		apt install libcurl4-openssl-dev libssl-dev zlib1g-dev
 		printf "\033[1;41m Cloning Wifite Dependencies from GitHub...\x1b[0m\n\n"
 		cd $gitdir
-		git clone https://github.com/ZerBea/hcxtools $wirelessdir
-		git clone https://github.com/ZerBea/hcxdumptool $wirelessdir
+		git clone https://github.com/ZerBea/hcxtools $wirelessdir/hcxtools
+		git clone https://github.com/ZerBea/hcxdumptool $wirelessdir/hcxdumptool
 		cd $dir2
 		make
 		make install

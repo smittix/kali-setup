@@ -12,6 +12,7 @@ osintdir=/opt/tools/osint
 enumdir=/opt/tools/enumeration
 cheatsheetsdir=/opt/tools/cheetsheets
 privescdir=/opt/tools/privesc
+databasedir=/opt/tools/database
 dir1=/opt/tools/wireless/hcxtools
 dir2=/opt/tools/wireless/hcxdumptool
 mkdir -p $gitdir
@@ -25,6 +26,7 @@ mkdir -p $osintdir
 mkdir -p $enumdir
 mkdir -p $cheatsheetsdir
 mkdir -p $privescdir
+mkdir -p $databasedir
 
 #Handling
 die() { echo "$@" 1>&2; exit 1; }
@@ -91,17 +93,28 @@ do
 		printf "\033[1;41m Checking for Tools Directory...(Repo's will be cloned to /opt/tools) \x1b[0m\n\n"
 		printf "\033[1;41m Cloning Git Repo's...\x1b[0m\n\n"
 		cd $gitdir
-		git clone https://github.com/m0rtem/CloudFail $clouddir
-		git clone https://github.com/pentestmonkey/windows-privesc-check $privescdir
-		git clone https://github.com/ICSec/airpwn-ng $wirelessdir
-		git clone https://github.com/DanMcInerney/wifijammer $wirelessdir
-		git clone https://github.com/leebaird/discover $osintdir
-		git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF $mobiledir
-		git clone https://github.com/BishopFox/spoofcheck
-		git clone https://github.com/hak5darren/wp6 $wirelessdir
-		git clone https://github.com/aquasecurity/kube-hunter $containersdir
-		git clone https://github.com/davidtavarez/pwndb $osintdir
-		git clone  https://github.com/phx/pyusbmux.git $mobiledir
+		mkdir -p /opt/tools/cloud/Cloudfail
+		git clone https://github.com/m0rtem/CloudFail $clouddir/Cloudfail
+		mkdir -p $privescdir/windows-privesc-check
+		git clone https://github.com/pentestmonkey/windows-privesc-check $privescdir/windows-privesc-check
+		mkdir -p $wirelessdir/airpwn-ng
+		git clone https://github.com/ICSec/airpwn-ng $wirelessdir/airpwn-ng
+		mkdir -p $wirelessdir/wifijammer
+		git clone https://github.com/DanMcInerney/wifijammer $wirelessdir/wifijammer
+		mkdir -p $osintdir/discover
+		git clone https://github.com/leebaird/discover $osintdir/discover
+		mkdir -p $mobiledir/MobSF
+		git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF $mobiledir/MobSF
+		mkdir -p $enumdir/spoofcheck
+		git clone https://github.com/BishopFox/spoofcheck $enumdir/spoofcheck
+		mkdir -p $wirelessdir/wp6
+		git clone https://github.com/hak5darren/wp6 $wirelessdir/wp6
+		mkdir -p $containersdir/kube-hunter
+		git clone https://github.com/aquasecurity/kube-hunter $containersdir/kube-hunter
+		mkdir -p $osintdir/pwndb
+		git clone https://github.com/davidtavarez/pwndb $osintdir/pwndb
+		mkdir -p $mobiledir/pyusbmux
+		git clone  https://github.com/phx/pyusbmux.git $mobiledir/pyusbmux
 		printf "\033[1;41m Installing Objection and Frida via Pip!\x1b[0m\n\n"
 		pip3 install objection
 		pip3 install frida

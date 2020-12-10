@@ -45,7 +45,7 @@ function optionsClean() {
 	done
 }
 #Menu Headers
-printf "\033[1;41m  Kali Post Install Script - Version 2.0\033[1;m\n\033[1;46m  By James Smith | https://www.stealingthe.network | @osiris2600  \033[1;m\n"
+printf "\033[1;41m  Kali Post Install Script - Version 2.0 \033[1;m \n\033[1;46m  By James Smith | https://www.stealingthe.network | @osiris2600  \033[1;m\n"
 printf "\033[1;46m  If you've just installed Kali Version 2020, It's recommended to go with Option 1 first.  \033[1;m\n"
 
 #define what to do for each option

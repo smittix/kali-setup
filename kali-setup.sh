@@ -29,7 +29,7 @@ fi
 PS3='Please enter your choice: '
 
 #input options
-options=("1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages" "4-Install-Git-Repos" "5-Install-Melcara-Nessus-Parser" "6-Install-Wifite-Dependencies" "7-Update-Git-Tools" "8-Exit")
+options=("1-Post-Install-Upgrade" "2-Dist-Upgrade" "3-Install-Packages-From-Kali-Repos" "4-Install-Tools-From-Git-Repos" "5-Install-Melcara-Nessus-Parser" "6-Install-Wifite-Dependencies" "7-Update-Git-Tools" "8-Exit")
 
 #function to display options nice
 function optionsClean() {
@@ -70,7 +70,7 @@ do
 		printf "\033[1;41m Done!\x1b[0m\n\n"
 		optionsClean
 		;;
-		"3-Install-Packages")
+		"3-Install-Packages-From-Kali-Repos")
 		printf "\033[1;41m Starting apt-get update...\x1b[0m\n\n"
 		apt install tor libreoffice brutespray crackmapexec bloodhound ftp secure-delete flameshot bleachbit veil veil-evasion nfs-common onesixtyone finger rsh-client jxplorer sipcalc nbtscan recordmydesktop eyewitness filezilla tmux zsh testssl.sh freerdp2-x11 remmina neo4j bettercap seclists shellter backdoor-factory responder firmware-mod-kit gobuster docker.io
 		printf "\033[1;41m Starting apt-get install -y linux-headers-$(uname -r)...\x1b[0m\n\n"
@@ -78,7 +78,7 @@ do
 		printf "\033[1;41m Done!\x1b[0m\n\n"
 		optionsClean
 		;;
-		"4-Install-Git-Repos")
+		"4-Install-Tools-From-Git-Repos")
 		printf "\033[1;41m Checking for Tools Directory...(Repo's will be cloned to /opt/tools) \x1b[0m\n\n"
 		printf "\033[1;41m Cloning Git Repo's...\x1b[0m\n\n"
 		cd $gitdir

@@ -126,7 +126,7 @@ do
 		;;
 		"6-Install-Wifite-Dependencies")
 		printf "\033[1;41m Checking some packages...\x1b[0m\n\n"
-		apt install libcurl4-openssl-dev libssl-dev zlib1g-dev
+		apt install -y libcurl4-openssl-dev libssl-dev zlib1g-dev
 		printf "\033[1;41m Cloning Wifite Dependencies from GitHub...\x1b[0m\n\n"
 		cd $gitdir
 		git clone https://github.com/ZerBea/hcxtools $wirelessdir/hcxtools

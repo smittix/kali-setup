@@ -113,6 +113,7 @@ do
 		pip3 install objection
 		pip3 install frida
 		printf "\033[1;41m Pulling MobSF Docker Image!\x1b[0m\n\n"
+		apt install -y docker.io
 		docker pull opensecurity/mobile-security-framework-mobsf
 		printf "\033[1;41m MobSF Docker Image was installed - run it using: docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest\x1b[0m\n\n"
 		printf "\033[1;41m Done!\x1b[0m\n\n"

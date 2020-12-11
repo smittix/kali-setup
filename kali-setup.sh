@@ -15,18 +15,7 @@ privescdir=/opt/tools/privesc
 databasedir=/opt/tools/database
 dir1=/opt/tools/wireless/hcxtools
 dir2=/opt/tools/wireless/hcxdumptool
-mkdir -p $gitdir
-mkdir -p $clouddir
-mkdir -p $mobiledir
-mkdir -p $wirelessdir
-mkdir -p $reportingdir
-mkdir -p $wordlistsdir
-mkdir -p $containersdir
-mkdir -p $osintdir
-mkdir -p $enumdir
-mkdir -p $cheatsheetsdir
-mkdir -p $privescdir
-mkdir -p $databasedir
+mkdir -p $gitdir $clouddir $mobiledir $wirelessdir $reportingdir $wordlistsdir $containersdir $osintdir $enumdir $cheatsheetsdir $privescdir $databasedir
 
 #Handling
 die() { echo "$@" 1>&2; exit 1; }

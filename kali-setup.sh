@@ -105,6 +105,9 @@ do
 		mkdir -p $mobiledir/pyusbmux
 		git clone  https://github.com/phx/pyusbmux.git $mobiledir/pyusbmux
 		wget https://github.com/OWASP/wstg/blob/master/checklist/WSTG-Checklist_v4.2.xlsx -P /opt/tools/cheatsheets
+		cpan install Encoding::BER
+		mkdir -p $enumdir/rdp-sec-check
+		git clone https://github.com/CiscoCXSecurity/rdp-sec-check $enumdir/rdp-sec-check
 		printf "\033[1;41m Installing Objection and Frida via Pip!\x1b[0m\n\n"
 		pip3 install objection
 		pip3 install frida

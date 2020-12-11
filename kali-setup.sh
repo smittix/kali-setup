@@ -10,7 +10,7 @@ wordlistsdir=/opt/tools/wordlists
 containersdir=/opt/tools/containers
 osintdir=/opt/tools/osint
 enumdir=/opt/tools/enumeration
-cheatsheetsdir=/opt/tools/cheetsheets
+cheatsheetsdir=/opt/tools/cheatsheets
 privescdir=/opt/tools/privesc
 databasedir=/opt/tools/database
 dir1=/opt/tools/wireless/hcxtools
@@ -104,6 +104,7 @@ do
 		git clone https://github.com/davidtavarez/pwndb $osintdir/pwndb
 		mkdir -p $mobiledir/pyusbmux
 		git clone  https://github.com/phx/pyusbmux.git $mobiledir/pyusbmux
+		wget https://github.com/OWASP/wstg/blob/master/checklist/WSTG-Checklist_v4.2.xlsx -P /opt/tools/cheatsheets
 		printf "\033[1;41m Installing Objection and Frida via Pip!\x1b[0m\n\n"
 		pip3 install objection
 		pip3 install frida
@@ -121,6 +122,7 @@ do
 		chmod +x parse_nessus_xml.v24.pl
 		cpan install Excel::Writer::XLSX XML::Simple XML::TreePP Math::Round Excel::Writer Data::Table
 		rm parse_nessus_xml.v24.pl_.zip
+		printf "\033[1;41m MobSF Docker Image was installed - run it using: docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest\x1b[0m\n\n"
 		printf "\033[1;41m Done! .\x1b[0m\n\n"
 		optionsClean
 		;;

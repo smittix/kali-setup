@@ -109,6 +109,7 @@ do
 		mkdir -p $enumdir/rdp-sec-check
 		git clone https://github.com/CiscoCXSecurity/rdp-sec-check $enumdir/rdp-sec-check
 		printf "\033[1;41m Installing Objection and Frida via Pip!\x1b[0m\n\n"
+		apt install -y python3-pip
 		pip3 install objection
 		pip3 install frida
 		printf "\033[1;41m Pulling MobSF Docker Image!\x1b[0m\n\n"

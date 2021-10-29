@@ -2,6 +2,10 @@
 
 Just a simple script to make new Kali v2 builds usable quickly. I really made this for myself but if others find it useful then that's awesome.
 
+The script will check whether the dialog package is installed, if not it will attempt to install it with your permission.
+
+![Screenshot](screenshot.png)
+
 This script has a number of options -
 
 [1] Post Install Upgrade

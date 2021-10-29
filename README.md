@@ -11,103 +11,76 @@ This script has a number of options -
 * Initializes the Metasploit Framework database
 * Configures the autostart of the postgresql database on boot
 
-[2] Dist Upgrade
+[2] Install Packages
 
-* Performs a distribution upgrade via apt dist-upgrade
+Installs the following packages from Kalis repos which are not included by default. Some small utils are also installed due to requiremnets of certain exams.
 
-[3] Install Packages
+* tor
+* libreoffice
+* brutespray
+* crackmapexec
+* bloodhound
+* ftp 
+* secure-delete 
+* flameshot 
+* bleachbit 
+* veil 
+* veil-evasion 
+* nfs-common 
+* onesixtyone 
+* finger 
+* rsh-client 
+* jxplorer 
+* sipcalc 
+* nbtscan 
+* recordmydesktop 
+* eyewitness 
+* filezilla 
+* tmux 
+* zsh 
+* testssl.sh 
+* freerdp2-x11 
+* remmina 
+* neo4j 
+* bettercap 
+* seclists 
+* shellter 
+* backdoor-factory 
+* responder 
+* firmware-mod-kit 
+* gobuster 
+* docker.io
 
-* Installs packages from the kali repo's including the following
 
-	* Libre Office
-	* crackmapexec
-	* brutespray
-	* bloodhound
-	* ftp
-	* secure-delete
-	* flameshot
-	* bleachbit
-	* veil evasion
-	* nfs tools
-	* onesixtyone
-	* finger
-	* rsh-client
-	* jxplorer
-	* sipcalc
-	* nbtscan
-	* recordmydesktop
-	* eyewitness
-	* filezilla
-	* tmux
-	* zsh
-	* testssl
-	* xfreerdp
-	* remmina
-	* neo4j
-	* bettercap
-	* seclists
-	* mitmf
-	* shellter
-	* backdoor-factory
-	* responder
-	* firmware-mod-kit
-	* GoBuster
+[3] Install Extra Tools
 
-[4] Install Git Repos
+This option clones various useful git repositories such as -
 
-* This option git clones various useful Git repositorys listed below.
-	* https://github.com/0xInfection/TIDoS-Framework
-	* https://github.com/RhinoSecurityLabs/pacu
-	* https://github.com/m0rtem/CloudFail
-	* https://github.com/trustedsec/ridenum
-	* https://github.com/pentestmonkey/windows-privesc-check
-	* https://github.com/trustedsec/unicorn
-	* https://github.com/ICSec/airpwn-ng
-	* https://github.com/adaptivethreat/Empire
-	* https://github.com/DanMcInerney/wifijammer
-	* https://github.com/CoreSecurity/impacket
-	* https://github.com/leebaird/discover
-	* https://github.com/scrapy/scrapy
-	* https://github.com/MobSF/Mobile-Security-Framework-MobSF
-	* https://github.com/drwetter/testssl.sh/
-	* https://github.com/BishopFox/spoofcheck
-	* https://github.com/DanMcInerney/icebreaker
-	* https://github.com/hak5darren/wp6
-	* https://github.com/superkojiman/onetwopunch
-	* https://github.com/nccgroup/chuckle
-	* https://github.com/m3m1t1m/appalyzer
-	* https://github.com/adipinto/yet-another-nessus-parser
-	* https://github.com/thelinuxchoice/blackeye
-	* https://github.com/securestate/king-phisher
-	* https://github.com/shenril/Sitadel
-	* https://github.com/khast3x/h8mail
-	* https://github.com/aquasecurity/kube-hunter
-	* https://github.com/BlackArch/wordlistctl
-	* https://github.com/ThoughtfulDev/EagleEye
-	* https://github.com/cr4shcod3/pureblood
-	* https://github.com/vaguileradiaz/tinfoleak
-	* https://sec.stanev.org/download/wlc/wlc_0.2.zip
+* https://github.com/m0rtem/CloudFail
+* https://github.com/pentestmonkey/windows-privesc-check
+* https://github.com/ICSec/airpwn-ng
+* https://github.com/DanMcInerney/wifijammer
+* https://github.com/leebaird/discover
+* https://github.com/BishopFox/spoofcheck
+* https://github.com/aquasecurity/kube-hunter
+* https://github.com/davidtavarez/pwndb
+* https://github.com/phx/pyusbmux.git
+* https://github.com/OWASP/wstg/blob/master/checklist/WSTG-Checklist_v4.2.xlsx
+* https://github.com/CiscoCXSecurity/rdp-sec-check
+* Frida via pip
+* Objection via pip
+* MobSF Docker Image
 	
 
-[5] Install Oh My ZSH
+[4] Install Melcara
 
-* Install Oh My Zsh and sets up the Jonathan theme.
+* Installs the Melcara Nessus parser from - http://www.melcara.com/archives/253
 
-![alt text](https://zshthem.es/img/screenshots/jonathan.png)
-
-[6] Install Vbox Additions
-
-* Exactly what it says on the tin, for use with Virtual Box.
-
-[7] Install Wifite Dependencies
+[5] Install Wifite Dependencies
 
 * This option installs libcurl4-openssl-dev, libssl-dev, zlib1g-dev, hcxtols and hcxdumptools. All to ensure Wifite operates properly.
 
-[8] Update Git Tools
+[6] Exit
 
-* Performs a git pull on your tools directory and updates all git repository's at once.
-
-[9] Exit
-
-* You know what this does..
+* Does this really need explaining :)
 

@@ -10,6 +10,11 @@ BACKTITLE="Kali Post Install Script - Version 3.0 - By Osiris - https://stealing
 TITLE="Make a selection"
 MENU="Please Choose one of the following options:"
 
+if [ $(dpkg-query -W -f='${Status}' nano 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  apt-get install nano;
+fi
+
 # Directory Variables
 gitdir=/opt/tools
 mobiledir=/opt/tools/mobile
